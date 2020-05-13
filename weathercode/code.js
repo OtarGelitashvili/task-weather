@@ -14,19 +14,11 @@ var day=[];
          
         var weather = {
             city : city.name,
-            date :weatherJS.list[1].dt_txt,
-            temp:weatherJS.list[1].main.temp,
-
-            date1:weatherJS.list[9].dt_txt,
+            
+            temp:weatherJS.list[1].main.temp, 
             temp1:weatherJS.list[9].main.temp,
-
-            date2:weatherJS.list[17].dt_txt,
             temp2:weatherJS.list[16].main.temp,
-
-            date3:weatherJS.list[24].dt_txt,
             temp3:weatherJS.list[24].main.temp,
-
-            date4:weatherJS.list[32].dt_txt,
             temp4:weatherJS.list[32].main.temp,
            
         }
