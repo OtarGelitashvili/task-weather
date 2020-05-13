@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> amindi</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    </head>
+    <body>
+       <p class="h1"><h1 style="text-align:center">გაიგე 5 დღის ამინდის პროგნოზი</h1></p></div>
+      </div>
+        <table class="table table-dark">
+            <thead>
+              
+              <tr>
+                <th scope="col">ქალაქი</th>
+                <th scope="col">დღევანდელი ტემპერატურა</th>
+                <th scope="col">მეორე დღე</th>
+                <th scope="col">მესამე დღე</th>
+                <th scope="col">მეოთხე დღე</th>
+                <th scope="col">მეხუთე დღე</th>
+              </tr>
+              
+            </thead>
+
+            <tbody>
+                <% for (weather of weatherInfo) { %>
+              <tr>
+                <td><%= weather.city %></td>
+                <td><%= weather.temp%>°C</td>
+                <td><%= weather.temp1%>°C </td>
+                <td><%= weather.temp2%>°C </td>
+                <td><%= weather.temp3%>°C </td>
+                <td><%= weather.temp4%>°C </td>
+              </tr>
+              <% } %>
+            </tbody>
+          </table>
+    </body>
+</html> 
+ 
